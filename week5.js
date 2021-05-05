@@ -74,6 +74,7 @@ window.addEventListener('DOMContentLoaded', async function() {
             // Store forecast into a variable
             let forecastDate = dailyForecast.forecastday[i]
 
+            // Insert HTML into the proper div that loops through the forecast
             forecastDays.insertAdjacentHTML(`beforeend`, `
             <div>
                 <img src="https:${forecastDate.day.condition.icon}" class="mx-auto">
@@ -83,7 +84,6 @@ window.addEventListener('DOMContentLoaded', async function() {
             </div>
             `)
         }
-
       }
     })
   })
